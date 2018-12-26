@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<style>
+#paymentForm{
+
+background-color:#ddd;
+border-radius:15px;
+box-shadow: 2px 3px #ddd;}
+</style>
+</head>
+<body onload="paymentData()" style="background-color:#C8F5EE">
+<div class="col-sm-12" style="margin-top:20px;">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+<div class="col-sm-12" id="goBack1"></div>
+<div class="col-sm-12">
+<center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="paymentForm">
+<div class="col-sm-12"><center style="color:green; font-family:Poor Richard; font-size:30px;" id="projectName">
+</center></div>
+<input type="hidden" name="cmd" value="_s-xclick">
+<div class="col-sm -12" id="paymentValueDiv">
+</div>
+<table style="height:180px;">
+<tr><td><input type="hidden" name="on0" value="Name of drop-down menu">Amount to Pay</td></tr><tr><td>
+	<select name="os0" id="showPayment"></select>
+ </td></tr>
+<tr><td><input type="hidden" name="on1" value="Name / Mobile">Name / Mobile</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="on2" value="Email Address">Email Address</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="INR">
+<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+<p><center>Guaranteed Secure payment done through Paypal</center></p>
+<p><center>OR</center></p>
+<p><center style="font-size:20px; font-weight:bold">Pay Using Paytm</center></p>
+<p><center><img src="assets/images/paytmQRCode.PNG" height="200px" width="200px"></center></p>
+<p>
+Type Project Name in description.
+</p>
+<p>
+Mail on projectassistinfo@gmail.com with your contact details.
+</p>
+<p><center>OR</center></p>
+<p><center style="font-size:20px; font-weight:bold">Cash On Delivery</center></p>
+<p>Mail on projectassistinfo@gmail.com with project name and contact details</p>
+</form>
+</center>
+</div>
+<div class="col-sm-12" id="goBack2"></div>
+</div>
+<div class="col-sm-3"></div>
+</div>
+</body>
+<script>
+var urlParams = new URLSearchParams(location.search);
+var pno=urlParams.get('PNO');
+var projectNumber=pno;
+var active=urlParams.get('active');
+document.getElementById("goBack1").innerHTML +='<div class="col-sm-12"><button type="button" class="btn btn-primary btn-block" onclick=passValue("'+pno+'","'+active+'");>Go Back</button></div>';
+document.getElementById("goBack2").innerHTML +='<div class="col-sm-12"><button type="button" class="btn btn-primary btn-block" onclick=passValue("'+pno+'","'+active+'");>Go Back</button></div>';
+//alert(projectNumber);
+var xml = new XMLHttpRequest();
+xml.open('GET', 'projectRelatedData.xml', false);
+xml.send();
+var xmlData = xml.responseXML;
+xmlData = (new DOMParser()).parseFromString(xml.responseText,'text/xml');
+var projectData = xmlData.getElementsByTagName("project");
+var projectName = projectData[projectNumber].getElementsByTagName("name")[0].firstChild.data;
+var paymentCode = projectData[projectNumber].getElementsByTagName("amount")[0].firstChild.data;
+//var projectName='School Management System';
+//var paymentCode='YZTTYWUHHXBWY';
+var amount;
+if(paymentCode=='5YAN6D67A3UE4')
+	{
+	amount=4000+(4000*18/100);
+	}
+if(paymentCode=='W5CWPBZLD2EJL')
+{
+amount=5000+(5000*18/100);
+}
+if(paymentCode=='YZTTYWUHHXBWY')
+{
+amount=6000+(6000*18/100);
+}
+
+function paymentData()
+{
+document.getElementById("paymentValueDiv").innerHTML = '<input type="hidden" name="hosted_button_id" value="'+paymentCode+'">';
+document.getElementById("showPayment").innerHTML = '<select><option value="Pay">Pay &#8377;'+amount.toFixed(2)+' INR</option></select>';
+document.getElementById("projectName").innerHTML = projectName;
+}
+function passValue(a,b){	
+	var queryString = '?PNO='+a+'&active='+b;
+	window.location.href = "index.html" + queryString;
+	
+}
+</script>
+</html>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectWebsite>
+
+	<project>
+		<name>CARGO SHIPPING</name>
+		<imagePath>CARGOSHIPPING.PNG</imagePath>
+		<pdfPath>cargoShipping.pdf</pdfPath>
+		<description>
+			Cargo shipping is all about booking cargo to move from
+			one place to
+			another. Owner can add new shipsand he can also track
+			ships.User can
+			register for cargo and he can also track ships.Admin
+			has the right to
+			view detailsof owner, to add a new company and also
+			update price of
+			ship. This software hasa very nice GUI to give a very
+			nice
+			presentation of a cargo management system.
+		</description>
+		<amount>5YAN6D67A3UE4</amount>
+		<imageName>cargoShipping_Page_1.jpg</imageName>
+		<imageName>cargoShipping_Page_2.jpg</imageName>
+		<imageName>cargoShipping_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>E-BAZZAR</name>
+		<imagePath>ebazzar.PNG</imagePath>
+		<pdfPath>eBazar.pdf</pdfPath>
+		<description>
+			This project emphasizeson e- commerce web portal for the purpose of
+displaying beautiful clothes worn by models for the purpose of displaying
+accordingly. This project has a very beautiful graphical interface which
+will make you enchanted with the quality of work done.
+Admin and User are the key people who are using this portal.
+		</description>
+		<amount>5YAN6D67A3UE4</amount>
+		<imageName>eBazar_Page_1.jpg</imageName>
+		<imageName>eBazar_Page_2.jpg</imageName>
+	</project>
+	<project>
+		<name>SCHOOL MANAGEMENT SYSTEM</name>
+		<imagePath>SCHOOLMANAGEMENTSYSTEM.PNG</imagePath>
+		<pdfPath>schoolManagementSystem.pdf</pdfPath>
+		<description>
+			This is a simple yet unique interface where in Admin and
+			Teachers can
+			easily interact with students. Admin can add or remove
+			teachers and
+			can edit t he details as required. The t eacher can add
+			student s
+			and edit details accordingly. Bot h t eachers and admin
+			can send
+			message to student s which can be viewed and replied by
+			them thus
+			making an interacting session while recording all data.
+		</description>
+		<amount>YZTTYWUHHXBWY</amount>
+		<imageName>schoolManagementSystem_Page_1.jpg</imageName>
+		<imageName>schoolManagementSystem_Page_2.jpg</imageName>
+		<imageName>schoolManagementSystem_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>COURIER MANAGEMENT</name>
+		<imagePath>COURIERMANAGEMENT.PNG</imagePath>
+		<pdfPath>courierManagement.pdf</pdfPath>
+		<description>
+			The project is about courier bookings and listing of
+			bookings thus
+			providing an efficient way to manage courier services.
+			Admin can
+			manage employees by adding or removing fromsystem.Users can
+			login and
+			manage their login credentials.Employees can carry out
+			courier
+			bookings and see which all bookings done.
+		</description>
+		<amount>5YAN6D67A3UE4</amount>
+		<imageName>courierManagement_Page_1.jpg</imageName>
+		<imageName>courierManagement_Page_2.jpg</imageName>
+		<imageName>courierManagement_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>HOTEL MANAGEMENT SYSTEM</name>
+		<imagePath>HOTELMANAGEMENT.PNG</imagePath>
+		<pdfPath>hotelManagement.pdf</pdfPath>
+		<description>
+			This project is about 3 types of categories - Admin,User
+			and Employee.A
+			user has the right to book a room.The employee can see
+			all followers
+			and user details,where as admin being the top of chain
+			can add rooms,
+			view followers,add employee and view his profile and
+			view details of
+			users. This project is all about managing a hotel
+			booking.
+		</description>
+		<amount>YZTTYWUHHXBWY</amount>
+		<imageName>hotelManagement_Page_1.jpg</imageName>
+		<imageName>hotelManagement_Page_2.jpg</imageName>
+		<imageName>hotelManagement_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>ONLINE BIKER</name>
+		<imagePath>onlinebiker.PNG</imagePath>
+		<pdfPath>onlineBiker.pdf</pdfPath>
+		<description>
+			We love bikes. We love traveling. And, we want you to
+			love them too!
+			What started as a bike rental platform a year ago is
+			now a complete
+			ecosystem of bikes. From two wheeler rentals to riding
+			gears, from
+			exclusive bike merchandise to road trips and tours, from
+			bike
+			refurbishing and maintenance to fleet management system - we have
+			them all.
+		</description>
+		<amount>YZTTYWUHHXBWY</amount>
+		<imageName>onlineBiker_Page_1.jpg</imageName>
+		<imageName>onlineBiker_Page_2.jpg</imageName>
+		<imageName>onlineBiker_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>CANTEEN MANAGEMENT SYSTEM</name>
+		<imagePath>CANTEENMANAGEMENTSYSTEM.PNG</imagePath>
+		<pdfPath>canteenManagementSystem.pdf</pdfPath>
+		<description>
+			A canteen is required in every establishment . It is
+			necessary to
+			operate the canteen efficiently generate profits and also
+			to provide
+			good food with high quality.This software has3
+			categoriesAdmin,User
+			and Employee.Each of them have been assigned with
+			different of work
+			thus managing the canteen.
+		</description>
+		<amount>YZTTYWUHHXBWY</amount>
+		<imageName>canteenManagementSystem_Page_1.jpg</imageName>
+		<imageName>canteenManagementSystem_Page_2.jpg</imageName>
+		<imageName>canteenManagementSystem_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>BLOOD BANK</name>
+		<imagePath>bloodBank.PNG</imagePath>
+		<pdfPath>bloodBank.pdf</pdfPath>
+		<description>
+			A simple yet in formative blood management system for
+			Patients /
+			Donors. Admins keepsat rack of list of donors.A patient can
+			request
+			for blood. Donor can donate blood. An admin who can view blood
+			request by a patient and donor request who wants to donate
+			blood.Thisproject can save life of many people.At this stage we have
+			developed a base which may be utilized accordingly.
+		</description>
+		<amount>W5CWPBZLD2EJL</amount>
+		<imageName>bloodBank_Page_1.jpg</imageName>
+		<imageName>bloodBank_Page_2.jpg</imageName>
+		<imageName>bloodBank_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>ONLINE ROOM</name>
+		<imagePath>ONLINEROOM.PNG</imagePath>
+		<pdfPath>onlineRoom.pdf</pdfPath>
+		<description>
+			A room booking system for tenants (Renter) who can put
+			there request
+			for living in a room.The room owner can register himself
+			and can view
+			requests of rooms required by tenant (renter). In case
+			room owner
+			likes then he can confirm the booking.
+		</description>
+		<amount>5YAN6D67A3UE4</amount>
+		<imageName>onlineRoom_Page_1.jpg</imageName>
+		<imageName>onlineRoom_Page_2.jpg</imageName>
+		<imageName>onlineRoom_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>COACHING MANAGEMENT SYSTEM</name>
+		<imagePath>coachingManagement.PNG</imagePath>
+		<pdfPath>coachingManagement.pdf</pdfPath>
+		<description>
+			The project is about dividing work between Admin,Teacher
+			and
+			Students.All the 3 categories have been assigned with specific
+			authorities. Admin has rights to add teachers and
+			students.Teachershave the right to view all students, interact with
+			them and also to overview students fees.Students have the right to
+			send queries to teachers and upon receiving reply, students can view
+			them accordingly.
+		</description>
+		<amount>W5CWPBZLD2EJL</amount>
+		<imageName>coachingManagement1.jpg</imageName>
+		<imageName>coachingManagement2.jpg</imageName>
+		<imageName>coachingManagement3.jpg</imageName>
+	</project>
+	<project>
+		<name>DOCTOR APPOINTMENT SYSTEM</name>
+		<imagePath>doctorManagement.PNG</imagePath>
+		<pdfPath>doctorManagement.pdf</pdfPath>
+		<description>
+			This project emphasizes on talking on booking of patient in a web portal system.Patient cans earch for the doctor and book for appointment. Doctor can check and confirm appointment so patient  can vist accordingly .Also admin is provided to add doctors in the portal , moreover customer list can be seen as well.
+		</description>
+		<amount>W5CWPBZLD2EJL</amount>
+		<imageName>doctorManagement_Page_1.jpg</imageName>
+		<imageName>doctorManagement_Page_2.jpg</imageName>
+		<imageName>doctorManagement_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>HOSPITAL MANAGEMENT SYSTEM</name>
+		<imagePath>hospitalManagement.PNG</imagePath>
+		<pdfPath>hospitalManagement.pdf</pdfPath>
+		<description>
+			This is project is about development of hospital
+			management system where
+			in Doctor can generate reports for patient
+			,Admin can check
+			availability of people related to hospital.Pharmacy
+			can view medical
+			reports,add medicine / check availability.Receptionist
+			can add
+			patients to the hospital which will be viewed by Doctor.
+		</description>
+		<amount>YZTTYWUHHXBWY</amount>
+		<imageName>hospitalManagement_Page_1.jpg</imageName>
+		<imageName>hospitalManagement_Page_2.jpg</imageName>
+		<imageName>hospitalManagement_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>TOLL TAX</name>
+		<imagePath>tollTax.PNG</imagePath>
+		<pdfPath>tollTax.pdf</pdfPath>
+		<description>
+			Vehicles are moving from place to another through toll roads.The
+software consists of two parts where in User can make vehicle "PASS" and
+user can also adjust duration to allow car to pass through the toll based
+upon amount received.
+Admin can view amount , add users, add vehicle , add employee and he can
+also delete as required thus managing toll tax system.
+		</description>
+		<amount>W5CWPBZLD2EJL</amount>
+		<imageName>tollTax_Page_1.jpg</imageName>
+		<imageName>tollTax_Page_2.jpg</imageName>
+		<imageName>tollTax_Page_3.jpg</imageName>
+	</project>
+	<project>
+		<name>TOURISM MANAGEMENT</name>
+		<imagePath>tourismManagement.PNG</imagePath>
+		<pdfPath>tourismManagement.pdf</pdfPath>
+		<description>
+			The project is about providing services to people
+			interested in visiting
+			tourist places.A user can navigate to view at
+			different tourist
+			destinations.Pacakge Tours can also be viewed and
+			user can select
+			and join any of the package tour depending upon his
+			choice.Thewebsite
+			can be logged in by a user who has selected a
+			package.Thewebsite also
+			provides an overview of what this site is all
+			about .
+		</description>
+		<amount>W5CWPBZLD2EJL</amount>
+		<imageName>tourismManagement_Page_1.jpg</imageName>
+		<imageName>tourismManagement_Page_2.jpg</imageName>
+		<imageName>tourismManagement_Page_3.jpg</imageName>
+	</project>
+</projectWebsite>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment Details</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-2.1.3.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+#paymentForm{
+background-color:#ddd;
+border-radius:15px;
+box-shadow: 2px 3px #ddd;}
+</style>
+</head>
+<body onload="paymentData()" style="background-color:#C8F5EE">
+<div id="imageDiv"></div>
+</body>
+<script>
+var urlParams = new URLSearchParams(location.search);
+var pno=urlParams.get('PNO');
+var active=urlParams.get('active');
+function paymentData()
+{
+var imageName,htmlData;
+var projectNumber=pno;
+//alert(projectNumber);
+var xml = new XMLHttpRequest();
+xml.open('GET', 'projectRelatedData.xml', false);
+xml.send();
+var xmlData = xml.responseXML;
+xmlData = (new DOMParser()).parseFromString(xml.responseText,'text/xml');
+var projectData = xmlData.getElementsByTagName("project");
+var imageLength = projectData[projectNumber].getElementsByTagName("imageName").length;
+document.getElementById("imageDiv").innerHTML +='<div class="col-sm-12"><button type="button" class="btn btn-primary btn-block" onclick=passValue("'+pno+'","'+active+'");>Go Back</button></div>';
+for(var i=0;i<imageLength;i++)
+	{
+imageName = projectData[projectNumber].getElementsByTagName("imageName")[i].firstChild.data;
+htmlData='<div class="col-sm-12"><center><img src="descriptionImage/'+imageName+'" style="height:100%; width:80%"></center></div>';
+document.getElementById("imageDiv").innerHTML +=htmlData;
+	}
+document.getElementById("imageDiv").innerHTML +='<div class="col-sm-12"><button type="button" class="btn btn-primary btn-block" onclick=passValue("'+pno+'","'+active+'");>Go Back</button></div>';
+}
+function passValue(a,b){	
+	var queryString = '?PNO='+a+'&active='+b;
+	window.location.href = "index.html" + queryString;
+	
+}
+</script>
+</html>
